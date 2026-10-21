@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coca-Cola | Refresh Your World</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff;
+            color: #222;
+        }
+
+        /* Navbar */
+        header {
+            background: #e31837;
+            color: white;
+            padding: 18px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 22px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #fdffe0;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 520px;
+            background: linear-gradient(120deg, #a90020, #ed1b36, #710015);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 30px;
+            padding: 60px 8%;
+            flex-wrap: wrap;
+        }
+
+        .hero-text {
+            max-width: 480px;
+        }
+
+        .hero h1 {
+            font-size: clamp(38px, 6vw, 65px);
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            line-height: 1.7;
+            margin-bottom: 25px;
+        }
+
+        .hero img {
+            width: 280px;
+            max-width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px #44000b66;
+        }
+
+        .btn {
+            display: inline-block;
+            background: white;
+            color: #e31837;
+            border: none;
+            padding: 14px 28px;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #ffe0e5;
+        }
+
+        /* Products */
+        .products {
+            padding: 65px 7%;
+            text-align: center;
+        }
+
+        .products h2 {
+            font-size: 36px;
+            color: #e31837;
+            margin-bottom: 12px;
+        }
+
+        .intro {
+            margin-bottom: 35px;
+            color: #555;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px #00000012;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: contain;
+        }
+
+        .card h3 {
+            color: #e31837;
+            margin: 15px 0 10px;
+        }
+
+        .card p {
+            color: #555;
+            line-height: 1.5;
+        }
+
+        /* About */
+        .about {
+            background: #fff0f2;
+            padding: 60px 8%;
+            text-align: center;
+        }
+
+        .about h2 {
+            color: #e31837;
+            font-size: 32px;
+            margin-bottom: 18px;
+        }
+
+        .about p {
+            max-width: 750px;
+            margin: auto;
+            line-height: 1.8;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                justify-content: center;
+            }
+
+            nav a {
+                margin: 5px 8px;
+                display: inline-block;
+            }
+
+            .hero {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <div class="logo">Coca-Cola</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#about">About</a>
+             <a href="#about">services</a>
+              <a href="#about">contact us</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <h1>Refresh Your World!</h1>
+
+            <p>
+                Enjoy the refreshing taste of Coca-Cola.
+                Share happiness, make memories, and
+                enjoy every special moment.
+            </p>
+
+            <a href="#products" class="btn">Explore Products</a>
+        </div>
+
+        <img
+            src="https://images.unsplash.com/photo-1554866585-cd94860890b7?auto=format&fit=crop&w=700&q=80"
+            alt="Cola drinks"
+        >
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <h2>Our Products</h2>
+
+        <p class="intro">
+            Discover refreshing drinks for every moment.
+        </p>
+
+        <div class="cards">
+
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1554866585-cd94860890b7?auto=format&fit=crop&w=500&q=80"
+                    alt="Classic cola"
+                >
+                <h3>Coca-Cola Original</h3>
+                <p>Enjoy the classic cola taste you know and love.</p>
+            </div>
+
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1629203851122-3726ecdf080e?auto=format&fit=crop&w=500&q=80"
+                    alt="Refreshing cold drink"
+                >
+                <h3>Coca-Cola Zero Sugar</h3>
+                <p>A refreshing cola option with zero sugar.</p>
+            </div>
+
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1581636625402-29b2a704ef13?auto=format&fit=crop&w=500&q=80"
+                    alt="Cold drinks"
+                >
+                <h3>Refreshment</h3>
+                <p>Make your moments more refreshing and memorable.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About Coca-Cola</h2>
+
+        <p>
+            Coca-Cola is one of the world's most recognized
+            beverage brands. Explore our drinks and celebrate
+            the little moments that bring people together.
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p> Coca-Cola Website Project </p>
+        <p>Created for learning HTML, CSS and JavaScript.</p>
+        <p>© 2026 | Student Practice Project</p>
+    </footer>
+
+    <script>
+        // JavaScript button interaction
+        const button = document.querySelector(".btn");
+
+        button.addEventListener("click", function () {
+            console.log("welcome to pepsicola");
+        });
+    </script>
+
+</body>
+</html>
